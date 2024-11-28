@@ -35,7 +35,7 @@ public class adminlogin extends HttpServlet {
 			
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/prasanna","root","root");
 			
-			String query ="SELECT admin_name, password FROM admin_login where admin_name = ? AND password = ?";
+			String query ="select admin_name, password from admin_login where admin_name = ? and password = ?";
 			
 			stmt= con.prepareStatement(query);
 			
